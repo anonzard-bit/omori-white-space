@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.navbar-brand {
+  letter-spacing: 0.3em;
+  font-size: 0.9rem;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+/* PARALLAX HERO */
+.parallax {
+  background-image: url("img/bg-omori.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* overlay for better text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.75);
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 220px;
+  opacity: 0.85;
+}
+
+.hero-sub {
+  letter-spacing: 0.4em;
+  color: #666;
+  margin: 20px 0;
+}
+
+button {
+  background: none;
+  border: 1px solid #111;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  padding: 120px 0;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+/* FADE EFFECT */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1.2s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* EXPERIENCE SECTION */
+.omori-experience {
+  background-color: #0b0b0b;
+}
+
+.omori-img {
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.omori-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}
+
+.omori-experience h4 {
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+
+.omori-experience p {
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+
+/* CHAR SECTION */
+.team-section {
+  padding: 140px 0;
+  background: #fafafa;
+}
+
+.team-title {
+  letter-spacing: 0.5em;
+  font-size: 1.5rem;
+}
+
+.team-line {
+  width: 60px;
+  height: 1px;
+  background: #777;
+  margin: 20px auto 0;
+}
+
+.team-member {
+  margin-bottom: 70px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-6px);
+}
+
+.team-img {
+  border-radius: 6px; /* lebih tenang dari circle */
+}
+
+
+.team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: 0.4s ease;
+}
+
+.team-member h5 {
+  margin-top: 20px;
+  letter-spacing: 0.1em;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.team-member:hover .team-img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* MEDIA SECTION */
+.omori-media {
+  background-color: #0e0e0e;
+}
+
+.omori-title {
+  color: #ffffff;
+  letter-spacing: 0.25em;
+  font-size: 1.2rem;
+}
+
+.omori-card {
+  color: #eaeaea;
+  padding: 20px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.omori-card:hover {
+  transform: translateY(-8px);
+  opacity: 0.9;
+}
+
+.icon-omori {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.omori-card:hover .icon-omori {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OMORI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">OMORI</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#omoriNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="omoriNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#characters">Characters</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO WITH PARALLAX -->
+<section id="home" class="hero parallax fade">
+  <div class="hero-content text-center">
+    <img src="img/logo.png" class="hero-logo">
+    <p class="hero-sub">WELCOME TO WHITE SPACE</p>
+    <button id="enterBtn">ENTER</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section fade">
+  <div class="container text-center">
+    <h2>ABOUT</h2>
+    <p>
+      A surreal psychological journey through memories and dreams.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="container-fluid py-5 omori-experience">
+  <div class="container">
+    <h2 class="text-center mb-5 omori-title">Experience</h2>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 mb-3">
+        <img src="img/whitespace.jpg" class="img-fluid rounded omori-img">
+      </div>
+      <div class="col-md-6 text-light">
+        <h4>White Space</h4>
+        <p>
+          A quiet and empty place where OMORI spends most of his time.
+          Everything feels safe, but something feels wrong.
+        </p>
+      </div>
+    </div>
+
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6 mb-3">
+        <img src="img/dreamworld.jpg" class="img-fluid rounded omori-img">
+      </div>
+      <div class="col-md-6 text-light">
+        <h4>Dream World</h4>
+        <p>
+          A colorful world filled with friends, adventures,
+          and hidden fears beneath its cheerful surface.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CHARACTERS-->
+<section id="characters" class="team-section fade">
+  <div class="container text-center">
+    <h2 class="team-title">CHARACTERS</h2>
+    <div class="team-line"></div>
+
+    <div class="row justify-content-center mt-5">
+
+      <div class="col-md-4 team-member">
+        <img src="img/char-omori.png" class="team-img" alt="OMORI">
+        <h5>OMORI</h5>
+        <p>The Dreamer</p>
+      </div>
+
+      <div class="col-md-4 team-member">
+        <img src="img/char-sunny.png" class="team-img" alt="SUNNY">
+        <h5>SUNNY</h5>
+        <p>The Silent One</p>
+      </div>
+
+      <div class="col-md-4 team-member">
+        <img src="img/char-aubrey.png" class="team-img" alt="AUBREY">
+        <h5>AUBREY</h5>
+        <p>The Fighter</p>
+      </div>
+
+      <div class="col-md-4 team-member">
+        <img src="img/char-kel.png" class="team-img" alt="KEL">
+        <h5>KEL</h5>
+        <p>The Optimist</p>
+      </div>
+
+      <div class="col-md-4 team-member">
+        <img src="img/char-hero.png" class="team-img" alt="HERO">
+        <h5>HERO</h5>
+        <p>The Caretaker</p>
+      </div>
+
+      <div class="col-md-4 team-member">
+        <img src="img/char-mari.png" class="team-img" alt="MARI">
+        <h5>MARI</h5>
+        <p>The Memory</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section class="container-fluid py-5 omori-media">
+  <div class="container">
+    <h2 class="text-center mb-5 omori-title">World of OMORI</h2>
+
+    <div class="row justify-content-center">
+
+      <!-- Music -->
+      <div class="col-sm-6 col-lg-3 mb-4 text-center omori-card">
+        <div class="d-flex justify-content-center">
+          <div class="icon-omori">
+            <i class="bi bi-music-note-beamed"></i>
+          </div>
+        </div>
+        <h5 class="mt-3">Soundtrack</h5>
+        <p>
+          Dreamlike and unsettling music that shapes
+          the emotional world of OMORI.
+        </p>
+      </div>
+
+      <!-- Characters -->
+      <div class="col-sm-6 col-lg-3 mb-4 text-center omori-card">
+        <div class="d-flex justify-content-center">
+          <div class="icon-omori">
+            <i class="bi bi-people-fill"></i>
+          </div>
+        </div>
+        <h5 class="mt-3">Characters</h5>
+        <p>
+          OMORI, SUNNY, AUBREY, KEL, HERO,
+          and others with deep emotional stories.
+        </p>
+      </div>
+
+      <!-- World -->
+      <div class="col-sm-6 col-lg-3 mb-4 text-center omori-card">
+        <div class="d-flex justify-content-center">
+          <div class="icon-omori">
+            <i class="bi bi-moon-stars-fill"></i>
+          </div>
+        </div>
+        <h5 class="mt-3">Dream World</h5>
+        <p>
+          A black-and-white surreal world filled with
+          imagination, fear, and memories.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <small>Fan-made OMORI Theme</small>
+</footer>
+
+<audio id="bgAudio" loop>
+  <source src="audio/ambience.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
