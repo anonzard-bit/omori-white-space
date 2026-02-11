@@ -99,6 +99,28 @@ button {
   position: relative;
 }
 
+/* HERO SEARCH BAR */
+.hero-search {
+  max-width: 280px;
+}
+
+.hero-search input {
+  border-radius: 50px 0 0 50px;
+}
+
+.hero-search button {
+  border-radius: 0 50px 50px 0;
+}
+
+#enterBtn {
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+#enterBtn:hover {
+  transform: scale(1.05);
+}
+
 /* FADE EFFECT */
 .fade {
   opacity: 0;
@@ -135,6 +157,56 @@ button {
   color: #cccccc;
   line-height: 1.7;
 }
+
+
+/* MERCH SECTION */
+.merch-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.merch-item img {
+  transition: 0.4s ease;
+}
+
+.merch-item:hover img {
+  transform: scale(1.08);
+}
+
+.merch-item h6 {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.merch-item p {
+  color: #444;
+}
+
+.sold-badge {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  letter-spacing: 0.1em;
+}
+
+.merch-item small {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.merch-item {
+  transition: 0.3s ease;
+}
+
+.merch-item:hover {
+  transform: translateY(-6px);
+}
+
+
 
 
 /* CHAR SECTION */
@@ -230,6 +302,31 @@ button {
 .omori-card:hover .icon-omori {
   background: #ffffff;
   color: #000000;
+}
+
+
+/* Floating music button */
+.music-control {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
+
+.music-control button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.music-control button:hover {
+  background: #333;
+  transform: scale(1.1);
 }
 
 /* FOOTER */
