@@ -44,7 +44,21 @@ window.addEventListener("scroll", () => {
 
 // audio
 const btn = document.getElementById("enterBtn");
-const audio = document.getElementById("bgAudio");
+const audio = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+const icon = musicBtn.querySelector("i");
+
+musicBtn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    icon.classList.remove("bi-play-fill");
+    icon.classList.add("bi-pause-fill");
+  } else {
+    audio.pause();
+    icon.classList.remove("bi-pause-fill");
+    icon.classList.add("bi-play-fill");
+  }
+});
 
 btn.addEventListener("click", () => {
   audio.volume = 0.4;
