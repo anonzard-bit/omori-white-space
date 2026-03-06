@@ -391,6 +391,24 @@ button:hover {
   transform: translateY(-6px);
 }
 
+.merch-link{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}
+
+.merch-link:hover{
+  color:inherit;
+}
+
+.merch-card{
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.merch-card:hover{
+  transform:translateY(-5px);
+}
 
 
 
@@ -773,181 +791,120 @@ button:hover {
   transform: translateY(0);
 }
 
-/* PRODUCT BANNER */
-.product-banner{
-height:50vh;
-background:
-linear-gradient(
-rgba(0,0,0,0.6),
-rgba(0,0,0,0.6)
-),
-url("../img/bg-omori.jpg");
-
-background-size:cover;
-background-position:center;
-}
-
-.product-card{
-background:white;
-border-radius:8px;
-overflow:hidden;
-transition:0.3s ease;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
-
-.product-card img{
-width:100%;
-transition:0.4s;
-}
-
-.product-card:hover img{
-transform:scale(1.05);
-}
-
-.product-card:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
-}
-
-.product-info{
-padding:20px;
-text-align:center;
-}
-
 /* STORE BANNER */
-
-.store-banner{
-
-height:50vh;
-display:flex;
-align-items:center;
-justify-content:center;
-
-background:url("img/bg-omori.jpg");
-background-size:cover;
-background-position:center;
-
-color:white;
-text-align:center;
+.store-banner {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("img/bg-omori.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
 }
 
-.store-banner h1{
-letter-spacing:0.3em;
+.store-banner h1 {
+  letter-spacing: 0.3em;
 }
-
-
 
 /* FILTER */
-
-.product-filter{
-
-margin-top:40px;
+.product-filter {
+  margin-top: 40px;
 }
 
-.filter-btn{
-
-border:1px solid #111;
-background:none;
-padding:8px 20px;
-margin:5px;
-cursor:pointer;
-transition:0.3s;
+.filter-btn {
+  border: 1px solid #111;
+  background: none;
+  padding: 8px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.filter-btn:hover{
-
-background:#111;
-color:white;
+.filter-btn:hover {
+  background: #111;
+  color: white;
 }
 
-/* PRODUCT CARD */
-
-.product-card{
-
-background:white;
-border-radius:8px;
-overflow:hidden;
-transition:0.3s ease;
-
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-
+/* ================= PRODUCT PAGE ================= */
+.product-section {
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 
-.product-card img{
-
-width:100%;
-transition:0.4s;
+.product-category h5 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
 }
 
-.product-card:hover img{
-
-transform:scale(1.05);
-
+.product-category .list-group-item {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
 }
 
-.product-card:hover{
-
-transform:translateY(-6px);
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
-
+.product-category .list-group-item.active {
+  background: black;
+  border-color: black;
 }
 
-.product-info{
-
-padding:20px;
-text-align:center;
-
+.product-card {
+  border: none;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-.product-section{
-padding-top:140px;
-padding-bottom:80px;
+.product-card img {
+  width: 100%;
+  padding: 20px;
+  filter: grayscale(100%);
+  transition: 0.4s ease;
 }
 
-/* SIDEBAR KATEGORI */
-.product-category h5{
-letter-spacing:0.2em;
-margin-bottom:20px;
+.product-card a img {
+  cursor: zoom-in;
 }
 
-.product-category .list-group-item{
-border:none;
-border-bottom:1px solid #eee;
-font-size:0.85rem;
-letter-spacing:0.05em;
+.product-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
 }
 
-.product-category .list-group-item.active{
-background:#111;
-color:white;
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* PRODUCT CARD */
-.product-card{
-border:1px solid #eee;
-transition:0.3s ease;
+.product-card h6 {
+  font-weight: 600;
 }
 
-.product-card img{
-filter:grayscale(100%);
-transition:0.4s ease;
+.product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffae00;
 }
 
-.product-card a img{
-cursor: zoom-in;
+
+/* ================= LIGHTBOX ================= */
+
+/* tombol close */
+.lb-close{
+    opacity:1 !important;
 }
 
-.product-card:hover img{
-filter:grayscale(0%);
-transform:scale(1.03);
+/* background */
+.lb-dataContainer{
+    background:transparent;
 }
 
-.product-card:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
-}
-
-.product-price{
-color:#ffae00;
-font-weight:600;
+/* supaya gambar tidak terlalu besar */
+.lb-image{
+    border-radius:8px;
 }
