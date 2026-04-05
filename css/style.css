@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -921,6 +925,171 @@ button:hover {
 .omori-footer.fade.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1200px) {
+  .hero-logo {
+    width: 180px;
+  }
+  .about-box {
+    height: 320px;
+  }
+  .omori-experience .row {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: auto;
+    min-height: 70vh;
+    padding: 80px 0;
+  }
+  .hero-sub {
+    font-size: 0.95rem;
+    letter-spacing: 0.25em;
+  }
+  .hero-content {
+    padding: 0 1.5rem;
+  }
+  .hero-search {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .hero-search .form-control,
+  .hero-search .form-select,
+  .hero-search .btn {
+    min-width: 0;
+  }
+  .hero-search select,
+  .hero-search input,
+  .hero-search button {
+    border-radius: 12px !important;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-box {
+    height: 280px;
+  }
+  .about-btn {
+    padding: 10px 24px;
+  }
+  .section {
+    padding: 80px 0;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .omori-title {
+    font-size: 1rem;
+  }
+  .team-member {
+    margin-bottom: 40px;
+  }
+  .team-img {
+    width: 100px;
+    height: 100px;
+  }
+  .merch-item img {
+    max-width: 120px;
+  }
+  .subscribe-box {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link.btn-signin,
+  .navbar .nav-link.btn-signup {
+    padding: 0.35rem 0.8rem;
+    margin-left: 0;
+    margin-top: 0.4rem;
+  }
+  .navbar-nav {
+    gap: 0.4rem;
+  }
+  .hero-content {
+    padding: 0 1rem;
+  }
+  .about-section {
+    padding: 100px 10px;
+  }
+  .about-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .omori-media .row {
+    gap: 30px;
+  }
+  .reservation-card,
+  .login-card {
+    padding: 28px;
+  }
+  .review-grid {
+    gap: 20px;
+  }
+  .connect-section {
+    padding: 100px 15px;
+  }
+  .subscribe-box input,
+  .subscribe-box button {
+    width: 100%;
+  }
+  .music-control {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 18px;
+  }
+  .footer-line {
+    margin: 40px 0 25px;
+  }
+  .omori-footer {
+    padding: 120px 15px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-logo {
+    width: 160px;
+  }
+  .hero-sub {
+    letter-spacing: 0.16em;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .omori-experience {
+    padding: 70px 10px;
+  }
+  .team-title {
+    font-size: 1.2rem;
+  }
+  .team-line {
+    width: 40px;
+  }
+  .connect-title,
+  .subscribe-title {
+    font-size: 0.7rem;
+  }
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  .footer-bottom {
+    font-size: 0.65rem;
+  }
 }
 
 /* STORE BANNER */
