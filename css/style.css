@@ -73,12 +73,41 @@ h2 {
   color: #000;
 }
 
+.nav-link.btn-signin,
+.nav-link.btn-signup {
+  color: #111;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 30px;
+  padding: 0.35rem 1rem;
+  margin-left: 0.35rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-link.btn-signin:hover,
+.nav-link.btn-signup:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: #000;
+}
+
+.nav-link.btn-signup {
+  background: #111;
+  color: #fff;
+}
+
+.nav-link.btn-signup:hover {
+  background: #333;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
 /* PARALLAX HERO */
 .parallax {
   background-image: url("../img/bg-omori.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* overlay for better text visibility */
@@ -100,15 +129,6 @@ h2 {
 .hero-content {
   position: relative;
   z-index: 1;
-}
-
-
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-logo {
@@ -269,6 +289,90 @@ button:hover {
     rgba(255,255,255,0.2),
     rgba(0,0,0,0.1)
   );
+}
+
+/* Promo cards */
+.promo-card,
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.promo-card:hover,
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.08);
+}
+
+.promo-card img,
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.promo-card .card-body,
+.product-card .card-body {
+  padding: 1.4rem;
+}
+
+.btn-add-cart {
+  background: #222;
+  border: 1px solid #222;
+  color: #fff;
+  transition: background 0.25s ease;
+}
+
+.btn-add-cart:hover {
+  background: #444;
+}
+
+.checkout-form .form-control {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #111;
+}
+
+.checkout-form .form-label {
+  font-weight: 600;
+}
+
+.checkout-form .btn {
+  border-radius: 999px;
+}
+
+.order-summary-list {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.order-summary-list > div + div {
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.checkout-success {
+  display: none;
+  border: 1px solid #2f9d53;
+  background: #e9f8ed;
+  color: #145b2a;
+}
+
+.cart-empty {
+  border: 1px solid #f0c36c;
+  background: #fff8e4;
+  color: #6a4f17;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.checkout-button.disabled,
+.checkout-button.disabled:hover {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 /* floating animation */
@@ -513,7 +617,21 @@ button:hover {
   max-width: 400px;
 }
 
+.reservation-card,
+.login-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.reservation-form,
+.login-form {
+  width: 100%;
+}
+
 .reservation-form input,
+.login-form input,
 .subscribe-box input {
   background: transparent;
   border: 1px solid #aaa;
@@ -521,8 +639,22 @@ button:hover {
 }
 
 .reservation-form input::placeholder,
+.login-form input::placeholder,
 .subscribe-box input::placeholder {
   color: #ccc;
+}
+
+.login-card p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.login-card a.link-secondary {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.login-card a.link-secondary:hover {
+  color: #f8f9fa;
 }
 
 /* Review Section */
@@ -827,7 +959,7 @@ button:hover {
   color: white;
 }
 
-/* ================= PRODUCT PAGE ================= */
+/* PRODUCT PAGE */
 .product-section {
   padding-top: 120px;
   padding-bottom: 80px;
@@ -892,7 +1024,6 @@ button:hover {
 }
 
 
-/* ================= LIGHTBOX ================= */
 
 /* tombol close */
 .lb-close{

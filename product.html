@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
+  <!--NAVBAR-->
   <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">OMORI</a>
@@ -29,14 +29,29 @@
             <a class="nav-link active" href="product.html">Merch</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="promo.html">Promo</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="index.html#connect">Connect</a>
+          </li>
+          <li class="nav-item cart-icon">
+            <a class="nav-link" href="cart.html">
+              <i class="bi bi-cart3"></i>
+              <span class="cart-count" id="cartCount">0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-signin" href="signin.html">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-signup" href="signup.html">Sign Up</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- PRODUCT SECTION -->
+  <!--PRODUCT SECTION-->
   <section class="product-section container">
     <div class="row">
       <!-- KATEGORI -->
@@ -66,6 +81,7 @@
                 <p class="card-text">Official Faraway version plush with soft cotton material.</p>
                 <p class="product-price">$28</p>
                 <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#sunnyModal">Selengkapnya</button>
+                <button class="btn btn-primary btn-sm btn-add-cart mt-2" data-product="sunny">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -81,6 +97,7 @@
                 <p class="small text-muted">Cheerful Kel plush inspired by Faraway Town design.</p>
                 <p class="product-price">$28</p>
                 <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#kelModal">Selengkapnya</button>
+                <button class="btn btn-primary btn-sm btn-add-cart mt-2" data-product="kel">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -96,6 +113,7 @@
                 <p class="small text-muted">Pink-haired Aubrey plush with detailed outfit.</p>
                 <p class="product-price">$28</p>
                 <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#aubreyModal">Selengkapnya</button>
+                <button class="btn btn-primary btn-sm btn-add-cart mt-2" data-product="aubrey">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -111,6 +129,7 @@
                 <p class="small text-muted">Gentle Hero plush with signature blue outfit.</p>
                 <p class="product-price">$28</p>
                 <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#heroModal">Selengkapnya</button>
+                <button class="btn btn-primary btn-sm btn-add-cart mt-2" data-product="hero">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -126,6 +145,7 @@
                 <p class="small text-muted">Basil plush featuring flower accessory detail.</p>
                 <p class="product-price">$28</p>
                 <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#basilModal">Selengkapnya</button>
+                <button class="btn btn-primary btn-sm btn-add-cart mt-2" data-product="basil">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -141,6 +161,7 @@
                 <p class="small text-muted">Limited edition black silhouette plush version.</p>
                 <p class="product-price">$28</p>
                 <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#strangerModal">Selengkapnya</button>
+                <button class="btn btn-primary btn-sm btn-add-cart mt-2" data-product="stranger">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -159,8 +180,11 @@
         </div>
         <div class="modal-body text-center">
           <img src="img/march-sunny.png" class="img-fluid mb-3">
-          <p>Official Faraway version plush with soft cotton material.</p>
+          <p>Sunshine-soft Sunny plush with premium microfiber fill, embroidered facial details, and a removable Faraway Town scarf. Crafted for collectors who want the official quiet dream vibe in every stitch.</p>
+          <p><strong>Material:</strong> Microfiber plush, premium polyester filler.</p>
+          <p><strong>Toko Asli:</strong> Faraway Town Official Store</p>
           <h4>$28</h4>
+          <button class="btn btn-primary btn-add-cart" data-product="sunny">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -176,8 +200,11 @@
         </div>
         <div class="modal-body text-center">
           <img src="img/march-kel.png" class="img-fluid mb-3">
-          <p>Cheerful Kel plush inspired by Faraway Town design.</p>
+          <p>Bright Kel plush with embroidered smile, removable beanie, and vibrant color accents. This official plush captures the energy of Faraway Town with durable stitching and premium fiber fill.</p>
+          <p><strong>Features:</strong> Removable accessory, collectible tag, durable finish.</p>
+          <p><strong>Toko Asli:</strong> Faraway Town Official Store</p>
           <h4>$28</h4>
+          <button class="btn btn-primary btn-add-cart" data-product="kel">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -193,8 +220,11 @@
         </div>
         <div class="modal-body text-center">
           <img src="img/march-aubrey.png" class="img-fluid mb-3">
-          <p>Official Faraway version plush with soft cotton material.</p>
+          <p>Aubrey plush with signature pink hair, embroidered jacket details, and collectible attitude. Designed for fans who want a premium collectible made with soft touch materials and strong stitching.</p>
+          <p><strong>Dimensions:</strong> 25cm height, 15cm width.</p>
+          <p><strong>Toko Asli:</strong> Faraway Town Official Store</p>
           <h4>$28</h4>
+          <button class="btn btn-primary btn-add-cart" data-product="aubrey">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -210,8 +240,11 @@
         </div>
         <div class="modal-body text-center">
           <img src="img/march-hero.png" class="img-fluid mb-3">
-          <p>Official Faraway version plush with soft cotton material.</p>
+          <p>Hero plush with signature blue outfit, gentle expression, and premium filling. This collectible is built to last with embroidered accents and a soft, huggable finish.</p>
+          <p><strong>Perfect untuk:</strong> koleksi, hadiah, dekorasi meja.</p>
+          <p><strong>Toko Asli:</strong> Faraway Town Official Store</p>
           <h4>$28</h4>
+          <button class="btn btn-primary btn-add-cart" data-product="hero">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -227,8 +260,11 @@
         </div>
         <div class="modal-body text-center">
           <img src="img/march-basil.png" class="img-fluid mb-3">
-          <p>Official Faraway version plush with soft cotton material.</p>
+          <p>Basil plush with floral accessory, detailed embroidery, and a collectible store tag. Built to capture quiet style while remaining durable enough for display and soft hugs.</p>
+          <p><strong>Material:</strong> Premium plush fabric, hypoallergenic stuffing.</p>
+          <p><strong>Toko Asli:</strong> Faraway Town Official Store</p>
           <h4>$28</h4>
+          <button class="btn btn-primary btn-add-cart" data-product="basil">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -244,8 +280,11 @@
         </div>
         <div class="modal-body text-center">
           <img src="img/march-omori_plushies_stranger_front.png" class="img-fluid mb-3">
-          <p>Official Faraway version plush with soft cotton material.</p>
+          <p>Limited Stranger plush with a dark silhouette design, glowing detail print, and plush material engineered for collectible display. Ideal for fans of the mysterious Faraway Town aesthetic.</p>
+          <p><strong>Koleksi khusus:</strong> edisi terbatas, hanya tersedia di stock resmi.</p>
+          <p><strong>Toko Asli:</strong> Faraway Town Official Store</p>
           <h4>$28</h4>
+          <button class="btn btn-primary btn-add-cart" data-product="stranger">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -280,5 +319,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 </html>
